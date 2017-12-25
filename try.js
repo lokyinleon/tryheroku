@@ -12,7 +12,7 @@ function greetingMsg(name,showtime) {
 
 app.get('/', function (req, res) {
 
-res.redirect('/greetings');
+res.send("Hellow");
 });
 
 app.get('/greetings', function (req, res) {
