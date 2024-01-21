@@ -16,4 +16,4 @@ jobs:
     - uses: actions/checkout@v3
     - name: Send Log         
       run: |
-        echo "Name: ${{ github.event.inputs.name }}"
+        echo "Name: ${{ inputs.name }}"
