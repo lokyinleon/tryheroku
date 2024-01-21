@@ -15,6 +15,7 @@ runs:
       shell: bash
       run: |
           echo "Name: ${{inputs.name}}"
+          echo "action_state: ${{env.action_state}}"
 
 
 
