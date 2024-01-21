@@ -5,12 +5,16 @@ on:
     inputs:
       name:
         type: string
-        required: false
+        required: true
 
 jobs:
+
   build:
+    runs-on: ubuntu-latest
+
     steps:
+    - uses: actions/checkout@v3
     - name: Send Log         
       run: |
         echo "Name: ${{ inputs.name }}"
-        
+        echo "action_state: ${{ env.action_state }}
