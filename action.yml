@@ -5,7 +5,7 @@ on:
     inputs:
       name:
         type: string
-        required: false
+        required: true
 
 runs:
   using: "composite"
@@ -14,7 +14,7 @@ runs:
     - name: Send Log    
       shell: bash
       run: |
-          echo "sdfdsfsdf"
+          echo "Name: ${{inputs.name}}"
 
 
 
