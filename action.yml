@@ -5,7 +5,7 @@ on:
     inputs:
       name:
         type: string
-        required: true
+        required: false
 
 jobs:
   build:
@@ -13,3 +13,4 @@ jobs:
     - name: Send Log         
       run: |
         echo "Name: ${{ inputs.name }}"
+        
