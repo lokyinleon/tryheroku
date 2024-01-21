@@ -10,4 +10,10 @@ on:
 runs:
   using: "composite"
   steps: 
-    - name: Echo
+    - uses: actions/checkout@v3
+    - name: Send Log         
+      run: |
+          echo "sdfdsfsdf"
+
+
+
