@@ -8,10 +8,8 @@ on:
         required: true
 
 jobs:
-
   build:
     steps:
-    - uses: actions/checkout@v3
     - name: Send Log         
       run: |
         echo "Name: ${{ inputs.name }}"
